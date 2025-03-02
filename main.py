@@ -12,4 +12,6 @@ for question in question_data:
 
 
 quiz = QuizBrain(question_bank)
-quiz.next_question()
+
+while quiz.still_has_questions():#If the gamer has another question
+    quiz.next_question()
